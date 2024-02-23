@@ -500,7 +500,7 @@ p {
   max-height: calc(100vh - 257px);
 }
 
-.faq-page .question{
+.question{
   position: relative;
   margin-bottom: 16px;
   background-color: var(--orange);
@@ -508,11 +508,11 @@ p {
   padding: 16px 24px;
 }
 
-.faq-page .question h3{
+.question h3{
   font-size: 1.5rem;
   margin-bottom: 8px;
 }
 
-.faq-page .question p{
+ .question p{
   font-size: 1.2rem;
 }

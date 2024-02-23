@@ -51,26 +51,26 @@ addEventListener("DOMContentLoaded", () => {
       el: document.querySelector(".faq-page"),
     },
   };
-  const days = document.querySelector("#days");
-  const hours = document.querySelector("#hours");
-  const min = document.querySelector("#min");
-  const sec = document.querySelector("#sec");
-  const countdownH1 = document.querySelector(".countdown h1");
-  countdownH1.classList.add("hidden");
-  const interval = setInterval(() => {
-    const ms = dateend - Date.now();
-    if (ms <= 0) {
-      countdownH1.classList.remove("hidden");
-      clearInterval(interval);
-      days.parentElement.classList.add("hidden");
-      hours.parentElement.classList.add("hidden");
-      min.parentElement.classList.add("hidden");
-      sec.parentElement.classList.add("hidden");
-      return;
-    }
-    [days.textContent, hours.textContent, min.textContent, sec.textContent] =
-      unixToDays(ms);
-  }, 1000);
+  // const days = document.querySelector("#days");
+  // const hours = document.querySelector("#hours");
+  // const min = document.querySelector("#min");
+  // const sec = document.querySelector("#sec");
+  // const countdownH1 = document.querySelector(".countdown h1");
+  // countdownH1.classList.add("hidden");
+  // const interval = setInterval(() => {
+  //   const ms = dateend - Date.now();
+  //   if (ms <= 0) {
+  //     countdownH1.classList.remove("hidden");
+  //     clearInterval(interval);
+  //     days.parentElement.classList.add("hidden");
+  //     hours.parentElement.classList.add("hidden");
+  //     min.parentElement.classList.add("hidden");
+  //     sec.parentElement.classList.add("hidden");
+  //     return;
+  //   }
+  //   [days.textContent, hours.textContent, min.textContent, sec.textContent] =
+  //     unixToDays(ms);
+  // }, 1000);
   Object.values(pages).forEach((item) => item.el.classList.add("hidden"));
   const switchPage = () => {
     Object.values(pages).forEach((item) => item.el.classList.add("hidden"));
