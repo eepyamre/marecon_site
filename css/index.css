@@ -162,6 +162,7 @@ p {
   text-align: center;
 }
 
+.countdown-page,
 .vendors-page,
 .schedule-page {
   overflow: auto;
@@ -361,6 +362,7 @@ p {
     font-size: 53px;
     line-height: 53px;
   }
+  .countdown-page,
   .vendors-page,
   .schedule-page {
     overflow: auto;
@@ -392,6 +394,8 @@ p {
   .vendors-page > .row .card {
     flex-basis: calc(50% - 8px);
   }
+  
+  .countdown-page,
   .vendors-page,
   .schedule-page {
     overflow: auto;
@@ -444,11 +448,15 @@ p {
     font-size: 16px;
     padding: 0px 10px 10px;
   }
-
+  .countdown-page,
   .vendors-page,
   .schedule-page {
     overflow: auto;
     height: calc(100vh - 170px);
+  }
+
+  .countdown-page {
+    max-height: calc(100vh - 257px);
   }
 }
 
